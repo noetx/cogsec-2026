@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary -->
+  <title>CogSec 2026 — Cognitive Security for Human–AI Systems | HCOMP / CI 2026 Workshop</title>
+  <meta name="description" content="CogSec: a full-day HCOMP / CI 2026 workshop on cognitive security in human–AI systems. Washington, DC · September 27, 2026. Submissions due July 30, 2026." />
+  <meta name="keywords" content="cognitive security, human-AI systems, HCOMP 2026, Collective Intelligence 2026, AI trust and safety, over-reliance, under-reliance, appropriate reliance, cognitive vulnerabilities, CVMC, AI governance, misinformation, deepfake detection, frictional design, human computation" />
+  <meta name="author" content="Stanford HAI Cognitive Security Task Force" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#0d0120" />
+  <!-- TODO: replace with the site's real deployed URL before launch -->
+  <link rel="canonical" href="https://noetx.github.io/cogsec-2026/" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CogSec 2026 — Cognitive Security for Human–AI Systems" />
+  <meta property="og:title" content="CogSec 2026 — Cognitive Security for Human–AI Systems" />
+  <meta property="og:description" content="A full-day HCOMP / CI 2026 workshop building a shared vocabulary, a measurement agenda for over- and under-reliance, and the Cognitive Vulnerability and Mitigation Catalog (CVMC). Washington, DC · Sept 27, 2026." />
+  <meta property="og:url" content="https://noetx.github.io/cogsec-2026/" />
+  <meta property="og:image" content="https://noetx.github.io/cogsec-2026/images/og-cover.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="CogSec 2026: Cognitive Security for Human–AI Systems, an HCOMP / CI 2026 workshop." />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CogSec 2026 — Cognitive Security for Human–AI Systems" />
+  <meta name="twitter:description" content="A full-day HCOMP / CI 2026 workshop on cognitive security in human–AI systems. Washington, DC · Sept 27, 2026. Submissions due July 30." />
+  <meta name="twitter:image" content="https://noetx.github.io/cogsec-2026/images/og-cover.png" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured data: the workshop as a schema.org Event -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "CogSec 2026 — Cognitive Security for Human–AI Systems",
+    "description": "A full-day HCOMP 2026 / CI 2026 workshop on cognitive security: protecting the conditions under which people and groups reason for themselves as generative and agentic AI reshape attention, belief, memory, judgment, and agency. Anchored by the Cognitive Vulnerability and Mitigation Catalog (CVMC).",
+    "startDate": "2026-09-27",
+    "endDate": "2026-09-27",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+    "url": "https://noetx.github.io/cogsec-2026/",
+    "image": "https://noetx.github.io/cogsec-2026/images/og-cover.png",
+    "keywords": "cognitive security, human-AI systems, over-reliance, appropriate reliance, cognitive vulnerabilities, CVMC, AI governance, misinformation, deepfake detection, frictional design",
+    "location": {
+      "@type": "Place",
+      "name": "HCOMP 2026 / CI 2026 (co-located)",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Washington",
+        "addressRegion": "DC",
+        "addressCountry": "US"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Stanford HAI Cognitive Security Task Force",
+      "url": "https://cstf.dev/"
+    },
+    "superEvent": {
+      "@type": "Event",
+      "name": "ACM HCOMP 2026 / Collective Intelligence 2026",
+      "url": "https://hcomp.acm.org/2026/"
+    },
+    "performer": [
+      { "@type": "Person", "name": "Brett Frischmann", "affiliation": "Villanova University" },
+      { "@type": "Person", "name": "Ujwal Gadiraju", "affiliation": "TU Delft" },
+      { "@type": "Person", "name": "Aruna Sankaranarayanan", "affiliation": "MIT Media Lab" },
+      { "@type": "Person", "name": "Nick Caputo", "affiliation": "Oxford Martin AI Governance Initiative" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav">
+    <div class="wrap">
+      <a class="brand" href="#top">
+        <span class="mark">CogSec&nbsp;2026</span>
+        <span class="sub">HCOMP · CI</span>
+      </a>
+      <div class="nav-right">
+        <div class="nav-links" id="menu">
+          <a href="#about">About</a>
+          <a href="#themes">Themes</a>
+          <a href="#program">Program</a>
+          <a href="#speakers">Speakers</a>
+          <a href="#organizers">Organizers</a>
+          <a href="#cfp" class="cta">Call for Participation</a>
+        </div>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light and dark theme" onclick="toggleTheme()">☾</button>
+        <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <header class="hero" id="top">
+    <div class="wrap">
+      <span class="eyebrow">HCOMP 2026 / CI 2026 · Workshops Day</span>
+      <h1><span class="lede-title">Cognitive Security</span> for Human–AI Systems</h1>
+      <p class="tagline">
+        A full-day workshop on protecting the conditions under which people and groups
+        reason for themselves as generative and agentic AI reshape attention, belief,
+        memory, judgment, and agency.
+      </p>
+
+      <div class="meta">
+        <div><strong>Date</strong>September 27, 2026</div>
+        <div><strong>Where</strong>Washington, DC · in person + hybrid</div>
+        <div><strong>Format</strong>Full day (~7 hrs)</div>
+        <div><strong>Submissions due</strong>July 30, 2026 (AoE)</div>
+      </div>
+
+      <div class="btn-row">
+        <a class="btn btn-primary" href="#cfp">Call for Participation →</a>
+        <a class="btn btn-ghost" href="#program">See the program</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">The Workshop</div>
+        <h2>Naming a trust-and-safety risk the field can't yet name</h2>
+      </div>
+      <p class="lead">
+        As generative and agentic AI become embedded in search, education, companionship, and
+        decision support, a class of risk emerges that we lack a shared way to name, test, and
+        govern: a single model output may be accurate and disclosed, yet the risk lies in how
+        systems shape <strong>attention, belief formation, memory, judgment, and agency</strong>
+        across many interactions — and how they reshape collective sensemaking.
+      </p>
+      <p class="lead">
+        <strong>CogSec</strong> proposes <em>cognitive security</em> — the integrity of the
+        conditions under which people and groups reason for themselves — as a research agenda
+        between <strong>HCOMP</strong> (AI-assisted decision-making, over- and under-reliance,
+        oversight) and <strong>CI</strong> (misinformation, deliberation, civic decision-making).
+        The day is anchored by a hands-on session that builds the
+        <strong>Cognitive Vulnerability and Mitigation Catalog (CVMC)</strong>: a schema pairing
+        each AI affordance and cognitive vulnerability with a candidate mitigation, evaluation
+        metric, burden-and-equity check, and governance hook. Attendees leave having co-authored
+        catalog entries and a community roadmap.
+      </p>
+
+      <ul class="obj plain" style="margin-top:32px">
+        <li><span class="n">1</span><span class="t">Establish cognitive security as a shared agenda and vocabulary for HCOMP/CI.</span></li>
+        <li><span class="n">2</span><span class="t">Produce a community-extended starter set of CVMC entries.</span></li>
+        <li><span class="n">3</span><span class="t">Surface measurement methods for cognitive over- and under-reliance that travel beyond a single deployment.</span></li>
+        <li><span class="n">4</span><span class="t">Seed cross-institution collaborations and a measurement roadmap.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== THEMES ===================== -->
+  <section id="themes" class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Topics in Scope</div>
+        <h2>A spine, and application areas that put it to work</h2>
+        <p>The workshop's deliberate spine is the CVMC and the measurement of cognitive over- and under-reliance. The remaining themes are application surfaces.</p>
+      </div>
+
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>Cognitive vulnerabilities</h3>
+          <p>Attention (epistemic flooding, attentional capture); belief and judgment (fluency overtrust, authority transfer, personalized persuasion); memory and provenance (context collapse, source confusion); learning (cognitive offloading, skill atrophy); agency (automation deference, emotional dependency, agentic misalignment).</p>
+        </div>
+        <div class="card">
+          <h3>Measurement</h3>
+          <p>Over- and under-reliance, appropriate reliance, and calibration in AI-assisted decision-making; longitudinal and ecological evaluation; metrics for conversion, persistence, dependence, provenance, calibration, and skill retention.</p>
+        </div>
+        <div class="card">
+          <h3>Collective sensemaking</h3>
+          <p>Misinformation and influence operations, polarization, content moderation and governance, deliberation, prebunking and inoculation, and civic decision-making.</p>
+        </div>
+        <div class="card">
+          <h3>Defensive human computation</h3>
+          <p>Crowdsourced verification, source credibility, provenance and content authenticity, and deepfake and synthetic-media detection.</p>
+        </div>
+        <div class="card">
+          <h3>Design &amp; governance</h3>
+          <p>Frictional and cognitive-forcing design; auditing, red-teaming, incident reporting; and alignment to standards (NIST AI RMF, EU AI Act, ISO/IEC 42001).</p>
+        </div>
+        <div class="card">
+          <h3>The CVMC Jam</h3>
+          <p>Mixed groups of 4–6 each take a deployed AI affordance and draft a catalog entry end to end: affordance → vulnerability → failure pattern → mitigation → metric → burden-and-equity check → governance hook. Every attendee leaves with an artifact.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROGRAM ===================== -->
+  <section id="program">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Program</div>
+        <h2>Tentative outline</h2>
+        <p>A full day with coffee breaks and a lunch hour. Session order and timing are indicative.</p>
+      </div>
+
+      <div class="notice">
+        <span>🗓️</span>
+        <div><strong>Detailed agenda &amp; times: TBA.</strong> The schedule below is the tentative
+        program from the accepted proposal. Confirmed session titles, speakers, and start times will
+        be posted here as they are finalized.</div>
+      </div>
+
+      <div class="agenda">
+        <div class="slot feature">
+          <div class="time">Opening</div>
+          <div class="what"><h4>Opening framing</h4><p>Setting the cognitive-security agenda for the day.</p></div>
+          <div class="dur">20 min</div>
+        </div>
+        <div class="slot feature">
+          <div class="time">Keynote</div>
+          <div class="what"><h4>Keynote — AI, influence, and collective sensemaking</h4><p>The landscape of AI-mediated influence on human and collective cognition.</p></div>
+          <div class="dur">45 min</div>
+        </div>
+        <div class="slot">
+          <div class="time">Talks</div>
+          <div class="what"><h4>Contributed lightning talks</h4><p>Accepted short papers, position papers, and datasets.</p></div>
+          <div class="dur">40 min</div>
+        </div>
+        <div class="slot break">
+          <div class="time">Break</div>
+          <div class="what"><h4>Coffee</h4></div>
+          <div class="dur"></div>
+        </div>
+        <div class="slot feature">
+          <div class="time">Build</div>
+          <div class="what"><h4>CVMC Jam — build phase</h4><p>Mixed tables draft catalog entries end to end. Template, worked example, facilitator, and scribe per table.</p></div>
+          <div class="dur">75 min</div>
+        </div>
+        <div class="slot break">
+          <div class="time">Break</div>
+          <div class="what"><h4>Lunch</h4></div>
+          <div class="dur"></div>
+        </div>
+        <div class="slot">
+          <div class="time">Demos</div>
+          <div class="what"><h4>Demos &amp; tutorials</h4><p>Deepfake / manipulation detection and persuasion probes — hands-on stations.</p></div>
+          <div class="dur">45 min</div>
+        </div>
+        <div class="slot">
+          <div class="time">Panel 1</div>
+          <div class="what"><h4>Reliance, oversight &amp; frictional system design</h4><p>Cognitive-forcing functions, microboundaries, and seams.</p></div>
+          <div class="dur">45 min</div>
+        </div>
+        <div class="slot break">
+          <div class="time">Break</div>
+          <div class="what"><h4>Coffee</h4></div>
+          <div class="dur"></div>
+        </div>
+        <div class="slot">
+          <div class="time">Panel 2</div>
+          <div class="what"><h4>Belief, manipulation &amp; cognitive resilience</h4><p>Persuasion, prebunking, and what works.</p></div>
+          <div class="dur">45 min</div>
+        </div>
+        <div class="slot feature">
+          <div class="time">Report-out</div>
+          <div class="what"><h4>CVMC Jam — report-out &amp; review</h4><p>Every entry reviewed against the schema before release.</p></div>
+          <div class="dur">40 min</div>
+        </div>
+        <div class="slot feature">
+          <div class="time">Closing</div>
+          <div class="what"><h4>Closing synthesis &amp; roadmap</h4><p>A community measurement roadmap and next steps.</p></div>
+          <div class="dur">25 min</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SPEAKERS ===================== -->
+  <section id="speakers" class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Speakers</div>
+        <h2>Confirmed speakers</h2>
+        <p>Additional keynote, panel, and demo speakers are being confirmed on the standard timeline and will be posted here.</p>
+      </div>
+
+      <div class="people">
+        <div class="person">
+          <span class="badge confirmed">Confirmed · Panel 1</span>
+          <div class="avatar"><img src="images/brett-frischmann.jpeg" alt="Brett Frischmann" /></div>
+          <h3>Brett Frischmann</h3>
+          <p class="role">Villanova University · Widger Chair in Law, Business &amp; Economics</p>
+          <p class="bio">Co-author of <em>Re-Engineering Humanity</em> (Cambridge, 2018); his work on friction-in-design and prosocial friction anchors the workshop's design thread. Organizer.</p>
+        </div>
+        <div class="person">
+          <span class="badge confirmed">Confirmed · Panel 1</span>
+          <div class="avatar"><img src="images/ujwal-gadiraju.jpg" alt="Ujwal Gadiraju" /></div>
+          <h3>Ujwal Gadiraju</h3>
+          <p class="role">TU Delft · Web Information Systems</p>
+          <p class="bio">Associate Professor at TU Delft and director of the Delft AI "Design@Scale" Lab; Co-Editor-in-Chief of the <em>Human Computation Journal</em>. His research spans crowd computing, human-centered AI, and human–AI interaction.</p>
+        </div>
+        <div class="person">
+          <span class="badge confirmed">Confirmed · Demos</span>
+          <div class="avatar"><img src="images/aruna-sankaranarayanan.jpg" alt="Aruna Sankaranarayanan" /></div>
+          <h3>Aruna Sankaranarayanan</h3>
+          <p class="role">MIT Media Lab</p>
+          <p class="bio">Researcher at the MIT Media Lab (Viral Communications) working on manipulated media, deepfakes, and their effects on elections and public trust.</p>
+        </div>
+        <div class="person">
+          <span class="badge confirmed">Confirmed · Governance</span>
+          <div class="avatar"><img src="images/nick-caputo.jpg" alt="Nick Caputo" /></div>
+          <h3>Nick Caputo</h3>
+          <p class="role">Oxford Martin AI Governance Initiative</p>
+          <p class="bio">Legal researcher at the Oxford Martin AI Governance Initiative studying frontier-AI regulation, legal alignment, and AI governance institutions; a Harvard Law graduate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CFP ===================== -->
+  <section id="cfp">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Call for Participation</div>
+        <h2>Contribute to CogSec 2026</h2>
+        <p>We invite work on how AI-mediated systems shape — and can protect — human attention, belief formation, memory, judgment, agency, and collective sensemaking.</p>
+      </div>
+
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>What we welcome</h3>
+          <p>Short papers, position papers, demos, and datasets (non-archival) on measuring over- and under-reliance; the cognitive vulnerabilities above; persuasion and manipulation; misinformation, prebunking, and deliberation; crowdsourced verification and provenance; deepfake detection; frictional and cognitive-forcing design; and the auditing and governance of cognitive risks.</p>
+        </div>
+        <div class="card">
+          <h3>Submission format</h3>
+          <p><strong>2–6 pages</strong> (excluding references) in the <a href="https://www.acm.org/publications/proceedings-template" target="_blank" rel="noopener">ACM Primary Article Template</a> (LaTeX and Word versions available; an <a href="https://www.overleaf.com/latex/templates/association-for-computing-machinery-acm-sig-proceedings-template/bmvfhcdnxfty" target="_blank" rel="noopener">Overleaf</a> template is also provided), or an extended abstract plus demo description. Deadline is <strong>July 30, 2026, 11:59pm AoE</strong>. At least one author must register and present. Accepted work appears as a lightning talk and/or poster, and all participants join the hands-on session that builds the community CVMC. Review is <strong>single-blind</strong> — submissions need not be anonymized — with each receiving at least two reviews and organizers recusing from any conflicts; selection is lightweight (relevance, clarity, discussion potential).</p>
+        </div>
+      </div>
+
+      <h3 style="margin:34px 0 4px; font-size:1.1rem">Key dates</h3>
+      <div class="dates">
+        <div class="date-card"><div class="d">Jun 29, 2026</div><div class="l">Site &amp; CfP live</div></div>
+        <div class="date-card"><div class="d">Jul 30, 2026</div><div class="l">Submissions due · AoE</div></div>
+        <div class="date-card"><div class="d">Aug 7, 2026</div><div class="l">Notifications</div></div>
+        <div class="date-card"><div class="d">Sep 27, 2026</div><div class="l">Workshop</div></div>
+      </div>
+
+      <div class="callout">
+        <h3>Submit your work</h3>
+        <p><strong>Submission details are forthcoming</strong> and will be posted here shortly. We especially encourage early-career researchers and contributions that cross the HCOMP and CI communities. For questions in the meantime, reach the organizers by email.</p>
+        <a class="btn btn-primary" href="mailto:vastu@stanford.edu?subject=CogSec%202026%20Inquiry">Email the organizers →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ORGANIZERS ===================== -->
+  <section id="organizers" class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Organizers</div>
+        <h2>Who's running the workshop</h2>
+        <p>Organized with institutional backing from the Stanford HAI Cognitive Security Task Force.</p>
+      </div>
+
+      <div class="people">
+        <div class="person">
+          <div class="avatar"><img src="images/utsav-gupta.jpeg" alt="Utsav Gupta" /></div>
+          <h3>Utsav Gupta</h3>
+          <p class="role">Stanford HAI Cognitive Security Task Force · Stanford University · Lead organizer</p>
+          <p class="bio">Co-leads the Task Force and its speaker series; lead author of the CVMC work accepted at the 3rd Frictional AI Workshop (HHAI 2026) and the 2026 Trust and Safety Research Conference.</p>
+        </div>
+        <div class="person">
+          <div class="avatar"><img src="images/brett-frischmann.jpeg" alt="Brett Frischmann" /></div>
+          <h3>Brett Frischmann</h3>
+          <p class="role">Villanova University</p>
+          <p class="bio">Widger Chair in Law, Business &amp; Economics; co-author of <em>Re-Engineering Humanity</em>. Brings extensive convening experience from the Workshop on Governing Knowledge Commons.</p>
+        </div>
+        <div class="person">
+          <div class="avatar"><img src="images/eric-heng.png" alt="Eric Heng" /></div>
+          <h3>Eric Heng</h3>
+          <p class="role">Stanford University · Cognitive Security Task Force</p>
+          <p class="bio">Co-Lead of the Cognitive Security Task Force and co-author of the 2026 position paper <em>AI Development Should Prioritize Cognitive Security</em>.</p>
+        </div>
+        <div class="person">
+          <div class="avatar"><img src="images/andreas-haupt.jpg" alt="Andreas Haupt" /></div>
+          <h3>Andreas Haupt</h3>
+          <p class="role">Stanford HAI · Stanford Digital Economy Lab</p>
+          <p class="bio">HAI Postdoctoral Fellow (Ph.D., MIT CSAIL) researching human–AI evaluation, oversight, and platform incentives; previously with the U.S. FTC and the European Commission.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <h4>CogSec 2026</h4>
+          <p>Cognitive Security for Human–AI Systems — a workshop at HCOMP 2026 / CI 2026, Washington, DC, September 27, 2026.</p>
+          <p>Hosted by the <a href="https://cstf.dev" target="_blank" rel="noopener">Stanford HAI Cognitive Security Task Force</a>.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#themes">Themes</a></li>
+            <li><a href="#program">Program</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#cfp">Call for Participation</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:vastu@stanford.edu">vastu@stanford.edu</a></li>
+            <li>Utsav Gupta, lead organizer</li>
+          </ul>
+        </div>
+      </div>
+      <div class="fine">© 2026 Cognitive Security Task Force. Program and speakers subject to change. Accessibility baseline: captioning, accessible formats, and hybrid access.</div>
+    </div>
+  </footer>
+
+  <script>
+    // Close mobile menu after clicking a link
+    document.querySelectorAll('#menu a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        document.getElementById('menu').classList.remove('open');
+      });
+    });
+
+    // Light / dark theme toggle (persisted)
+    function applyTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      var btn = document.getElementById('theme-toggle');
+      if (btn) {
+        btn.textContent = theme === 'light' ? '☀' : '☾';
+        btn.setAttribute('aria-pressed', theme === 'light');
+      }
+      try { localStorage.setItem('cogsec-theme', theme); } catch (e) {}
+    }
+    function toggleTheme() {
+      var current = document.documentElement.getAttribute('data-theme') || 'dark';
+      applyTheme(current === 'dark' ? 'light' : 'dark');
+    }
+    (function () {
+      var saved;
+      try { saved = localStorage.getItem('cogsec-theme'); } catch (e) {}
+      applyTheme(saved || 'dark');
+    })();
+  </script>
+</body>
+</html>

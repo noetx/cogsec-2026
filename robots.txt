@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://noetx.github.io/cogsec-2026/sitemap.xml
