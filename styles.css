@@ -188,9 +188,15 @@ ul.plain { padding: 0; margin: 0; }
   width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center;
   font-weight: 800; color: #fff; font-size: 1.05rem; margin-bottom: 14px;
   background: linear-gradient(135deg, var(--brand-deep), var(--accent));
+  flex: none; overflow: hidden;
 }
 .person h3 { font-size: 1.05rem; margin: 0 0 2px; color: var(--ink); }
-.avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block; }
+/* aspect-ratio makes the height definite from the width; without it a non-square
+   source falls back to its intrinsic ratio and spills over the name below. */
+.avatar img {
+  width: 100%; height: 100%; aspect-ratio: 1; object-fit: cover;
+  border-radius: 50%; display: block;
+}
 .person .role { font-size: .86rem; color: var(--muted); margin: 0 0 10px; }
 .person p.bio { font-size: .92rem; margin: 0; color: var(--ink-soft); }
 .badge {
