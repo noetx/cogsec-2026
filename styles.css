@@ -214,6 +214,14 @@ ul.plain { padding: 0; margin: 0; }
 .date-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; text-align: center; box-shadow: var(--shadow); }
 .date-card .d { font-size: 1.02rem; font-weight: 800; color: var(--accent); }
 .date-card .l { font-size: .8rem; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; font-weight: 600; margin-top: 4px; }
+/* Superseded dates: struck through and de-emphasised so the live date reads first. */
+.was { color: var(--muted); font-weight: 500; text-decoration-thickness: 1px; margin-right: 3px; }
+.ext {
+  display: inline-block; font-size: .66rem; font-weight: 800; text-transform: uppercase;
+  letter-spacing: .07em; color: #fff; background: var(--accent);
+  border-radius: 999px; padding: 2px 8px; margin-left: 4px; vertical-align: 2px;
+}
+.fineprint { font-size: .85rem; color: var(--muted); margin: 14px 0 0; }
 .callout {
   background: linear-gradient(135deg, #59168b, #6e11b0 55%, #8a2be0); color: #fff;
   border: 1px solid var(--brand-hi);
@@ -222,7 +230,12 @@ ul.plain { padding: 0; margin: 0; }
 .callout h3 { color: #fff; margin: 0 0 8px; font-size: 1.3rem; }
 .callout p { color: rgba(255,255,255,.92); margin: 0 0 18px; max-width: 62ch; }
 .callout strong { color: #fff; }
-.callout .btn-primary { background: #fff; color: var(--brand); }
+/* Secondary button on the purple callout: outlined white. Without this it falls back
+   to the global link colour and disappears into the background. Must precede the
+   .btn-primary rule below — equal specificity, so source order decides. */
+.callout .btn { color: #fff; border-color: rgba(255,255,255,.6); background: rgba(255,255,255,.08); }
+.callout .btn:hover { background: rgba(255,255,255,.18); border-color: #fff; text-decoration: none; }
+.callout .btn-primary { background: #fff; color: var(--brand); border-color: #fff; }
 .callout .btn-primary:hover { background: #f0e8fb; }
 
 /* ---------- Footer ------------------------------------------------------- */
