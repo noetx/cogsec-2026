@@ -54,6 +54,21 @@ strong { color: var(--ink); }
 
 .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
 
+/* ---------- Announcement banner ------------------------------------------ */
+/* Brand purple with white text in both themes (same rationale as the callout),
+   so it never inherits the theme link color. */
+.banner {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px 12px;
+  /* Fixed hexes, not vars: light mode remaps --brand-deep to a pale lavender that
+     would sink the white text. */
+  background: linear-gradient(90deg, #59168b, #6e11b0);
+  color: #fff; text-align: center; padding: 10px 20px; font-size: .93rem; line-height: 1.4;
+}
+.banner:hover { text-decoration: none; }
+.banner strong { color: #fff; font-weight: 800; }
+.banner .ext { background: rgba(255,255,255,.2); vertical-align: 0; }
+.banner .banner-cta { font-weight: 800; text-decoration: underline; text-underline-offset: 3px; white-space: nowrap; }
+
 /* ---------- Nav ---------------------------------------------------------- */
 .nav {
   position: sticky; top: 0; z-index: 50;
@@ -72,7 +87,7 @@ strong { color: var(--ink); }
   color: var(--ink-soft); font-weight: 600; font-size: .9rem;
   padding: 8px 12px; border-radius: 8px;
 }
-.nav-links a:hover { background: var(--surface); color: #fff; text-decoration: none; }
+.nav-links a:hover { background: var(--surface); color: var(--ink); text-decoration: none; }
 .nav-links a.cta {
   background: var(--brand); color: #fff; margin-left: 6px;
 }
@@ -175,6 +190,17 @@ ul.plain { padding: 0; margin: 0; }
 .slot .what p { margin: 0; font-size: .92rem; color: var(--muted); }
 .slot.feature { background: var(--surface-2); }
 .slot.break { background: rgba(255,255,255,.02); }
+
+/* Contributed-talks listing (confirmed program) */
+.papers { display: grid; gap: 18px; }
+.paper-group { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; box-shadow: var(--shadow); }
+.paper-group h4 { margin: 0 0 12px; font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: var(--accent); }
+.paper-group ul { list-style: none; margin: 0; padding: 0; }
+.paper-group li { padding: 11px 0; border-top: 1px solid var(--line-soft); }
+.paper-group li:first-child { border-top: none; padding-top: 0; }
+.paper-group li:last-child { padding-bottom: 0; }
+.paper-title { display: block; color: var(--ink); font-weight: 600; font-size: .97rem; }
+.paper-authors { display: block; color: var(--muted); font-size: .87rem; margin-top: 2px; }
 .slot.break .what h4 { font-weight: 600; color: var(--ink-soft); }
 
 /* ---------- Speakers ----------------------------------------------------- */
@@ -187,7 +213,7 @@ ul.plain { padding: 0; margin: 0; }
 .person .avatar {
   width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center;
   font-weight: 800; color: #fff; font-size: 1.05rem; margin-bottom: 14px;
-  background: linear-gradient(135deg, var(--brand-deep), var(--accent));
+  background: linear-gradient(135deg, #59168b, #7c1fc4); /* fixed: white initials need a dark bg in both themes */
   flex: none; overflow: hidden;
 }
 .person h3 { font-size: 1.05rem; margin: 0 0 2px; color: var(--ink); }
@@ -230,6 +256,18 @@ ul.plain { padding: 0; margin: 0; }
 .callout h3 { color: #fff; margin: 0 0 8px; font-size: 1.3rem; }
 .callout p { color: rgba(255,255,255,.92); margin: 0 0 18px; max-width: 62ch; }
 .callout strong { color: #fff; }
+/* Rate table on the purple callout: white text in both themes, like everything else here. */
+.callout .rates { width: 100%; max-width: 620px; border-collapse: collapse; margin: 0 0 20px; font-size: .95rem; }
+.callout .rates th, .callout .rates td { padding: 9px 14px; border-bottom: 1px solid rgba(255,255,255,.28); color: #fff; text-align: right; }
+.callout .rates th:first-child, .callout .rates td:first-child { text-align: left; }
+.callout .rates th { font-size: .76rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: rgba(255,255,255,.85); vertical-align: bottom; }
+.callout .rates tbody tr:last-child td { border-bottom: none; }
+.callout .rates td:nth-child(2) { font-weight: 800; }
+
+/* Inline links on the purple callout: white and underlined in both themes — the global
+   accent color is purple-on-purple here, unreadable in light mode. */
+.callout a:not(.btn) { color: #fff; text-decoration: underline; text-decoration-color: rgba(255,255,255,.55); text-underline-offset: 2px; }
+.callout a:not(.btn):hover { text-decoration-color: #fff; }
 /* Secondary button on the purple callout: outlined white. Without this it falls back
    to the global link colour and disappears into the background. Must precede the
    .btn-primary rule below — equal specificity, so source order decides. */
