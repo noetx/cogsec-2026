@@ -6,7 +6,7 @@
 
   <!-- Primary -->
   <title>CogSec 2026 — Cognitive Security for Human–AI Systems | HCOMP / CI 2026 Workshop</title>
-  <meta name="description" content="CogSec: a full-day HCOMP / CI 2026 workshop on cognitive security in human–AI systems. Near Washington, DC (Alexandria, VA) · September 27, 2026. Registration is open — early rates extended to August 28." />
+  <meta name="description" content="CogSec: a full-day HCOMP / CI 2026 workshop on cognitive security in human–AI systems. Near Washington, DC (Alexandria, VA) · September 27, 2026. Final program, speakers, and the digital gallery of all 17 accepted papers." />
   <meta name="keywords" content="cognitive security, human-AI systems, HCOMP 2026, Collective Intelligence 2026, AI trust and safety, over-reliance, under-reliance, appropriate reliance, cognitive vulnerabilities, CVMC, AI governance, misinformation, deepfake detection, frictional design, human computation" />
   <meta name="author" content="Stanford HAI Cognitive Security Task Force" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -20,7 +20,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="CogSec 2026 — Cognitive Security for Human–AI Systems" />
   <meta property="og:title" content="CogSec 2026 — Cognitive Security for Human–AI Systems" />
-  <meta property="og:description" content="A full-day HCOMP / CI 2026 workshop building a shared vocabulary, a measurement agenda for over- and under-reliance, and the Cognitive Vulnerability and Mitigation Catalog (CVMC). Near Washington, DC (Alexandria, VA) · Sept 27, 2026. Registration is open — early rates extended to Aug 28." />
+  <meta property="og:description" content="A full-day HCOMP / CI 2026 workshop building a shared vocabulary, a measurement agenda for over- and under-reliance, and the Cognitive Vulnerability and Mitigation Catalog (CVMC). Near Washington, DC (Alexandria, VA) · Sept 27, 2026. Final program, speakers, and digital gallery now posted." />
   <meta property="og:url" content="https://noetx.github.io/cogsec-2026/" />
   <!-- Call closed Aug 17; the dated CfP card is retired in favour of the evergreen cover. -->
   <meta property="og:image" content="https://noetx.github.io/cogsec-2026/images/og-cover.png?v=aug18" />
@@ -32,7 +32,7 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="CogSec 2026 — Cognitive Security for Human–AI Systems" />
-  <meta name="twitter:description" content="A full-day HCOMP / CI 2026 workshop on cognitive security in human–AI systems. Near Washington, DC (Alexandria, VA) · Sept 27, 2026. Registration is open — early rates extended to Aug 28." />
+  <meta name="twitter:description" content="A full-day HCOMP / CI 2026 workshop on cognitive security in human–AI systems. Near Washington, DC (Alexandria, VA) · Sept 27, 2026. Final program, speakers, and digital gallery now posted." />
   <meta name="twitter:image" content="https://noetx.github.io/cogsec-2026/images/og-cover.png?v=aug18" />
   <meta name="twitter:image:alt" content="CogSec 2026: Cognitive Security for Human–AI Systems. Near Washington, DC, September 27, 2026." />
 
@@ -57,6 +57,7 @@
       "name": "Virginia Tech Academic Building One — HCOMP 2026 / CI 2026 (co-located)",
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "3625 Potomac Ave",
         "addressLocality": "Alexandria",
         "addressRegion": "VA",
         "addressCountry": "US"
@@ -73,10 +74,11 @@
       "url": "https://hcomp.acm.org/2026/"
     },
     "performer": [
+      { "@type": "Person", "name": "Jin-Hee Cho", "affiliation": "Virginia Tech" },
       { "@type": "Person", "name": "Brett Frischmann", "affiliation": "Villanova University" },
-      { "@type": "Person", "name": "Ujwal Gadiraju", "affiliation": "TU Delft" },
-      { "@type": "Person", "name": "Aruna Sankaranarayanan", "affiliation": "MIT CSAIL / EECS" },
-      { "@type": "Person", "name": "Nick Caputo", "affiliation": "Oxford Martin AI Governance Initiative" }
+      { "@type": "Person", "name": "Ujwal Gadiraju", "affiliation": "Delft University of Technology" },
+      { "@type": "Person", "name": "Nicholas Caputo", "affiliation": "Johns Hopkins School of Government and Policy" },
+      { "@type": "Person", "name": "Ryan L. Boyd", "affiliation": "Vanderbilt University" }
     ]
   }
   </script>
@@ -84,10 +86,10 @@
 <body>
 
   <!-- ===================== ANNOUNCEMENT BANNER ===================== -->
-  <a class="banner" href="#register">
-    <span class="ext">Extended</span>
-    <span class="banner-text">Early-bird registration now runs through <strong>Friday, Aug 28</strong> — workshop-day tickets from <strong>$90</strong>, lunch included.</span>
-    <span class="banner-cta">Register now →</span>
+  <a class="banner" href="gallery/index.html">
+    <span class="ext">New</span>
+    <span class="banner-text">Papers and posters from all 17 talks are online.</span>
+    <span class="banner-cta">See the papers →</span>
   </a>
 
   <!-- ===================== NAV ===================== -->
@@ -102,13 +104,14 @@
           <a href="#about">About</a>
           <a href="#themes">Themes</a>
           <a href="#program">Program</a>
+          <a href="gallery/index.html">Papers</a>
           <a href="#speakers">Speakers</a>
           <a href="#organizers">Organizers</a>
           <a href="#cfp">Call for Participation</a>
           <a href="#register" class="cta">Register</a>
         </div>
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light and dark theme" onclick="toggleTheme()">☾</button>
-        <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+        <button class="nav-toggle" aria-label="Menu" aria-controls="menu" aria-expanded="false" onclick="this.setAttribute('aria-expanded', document.getElementById('menu').classList.toggle('open'))">☰</button>
       </div>
     </div>
   </nav>
@@ -126,14 +129,14 @@
 
       <div class="meta">
         <div><strong>Date</strong>September 27, 2026</div>
-        <div><strong>Where</strong>Near Washington, DC — Virginia Tech Academic Building One, Alexandria, VA · in person + hybrid</div>
-        <div><strong>Format</strong>Full day (~7 hrs)</div>
-        <div><strong>Registration</strong>Early rates extended to August 28, 2026</div>
+        <div><strong>Where</strong>Room 4100, Virginia Tech Academic Building One, 3625 Potomac Ave, Alexandria, VA · in person + hybrid</div>
+        <div><strong>Time</strong>9:00–17:00 ET · badges from 8:00</div>
+        <div><strong>Program</strong>1 keynote · 2 panels · 17 lightning talks · the CVMC Jam</div>
       </div>
 
       <div class="btn-row">
-        <a class="btn btn-primary" href="#register">Register →</a>
-        <a class="btn btn-ghost" href="#program">See the program</a>
+        <a class="btn btn-primary" href="#program">See the program →</a>
+        <a class="btn btn-ghost" href="gallery/index.html">Papers &amp; posters</a>
       </div>
     </div>
   </header>
@@ -217,125 +220,91 @@
       <div class="section-head">
         <div class="kicker">Program</div>
         <h2>Program</h2>
-        <p>A full day with coffee breaks and a lunch hour. Every accepted paper presents as a lightning talk; virtual posters in the digital gallery are an optional complement.</p>
+        <p>A full day with coffee breaks and a lunch hour. Each accepted paper is a four-minute lightning talk. All times are Eastern. Abstracts, posters, and papers are on the <a href="gallery/index.html">papers page</a>.</p>
       </div>
 
       <div class="notice">
         <span>🗓️</span>
-        <div><strong>Times: TBA.</strong> Decisions went out August 20 and the session structure below
-        is confirmed. Clock times, the talk order, and remaining speakers will be posted once the
-        conference assigns rooms and slots.</div>
+        <div><strong>Sunday, September 27 · 9:00–17:00 · Room 4100, Academic Building One.</strong> Badges are at the
+        1st-floor registration desk from 8:00. Registered participants joining remotely get the Zoom link by email.</div>
       </div>
 
       <div class="agenda">
         <div class="slot feature">
-          <div class="time">Opening</div>
+          <div class="time">9:00</div>
           <div class="what"><h4>Opening framing</h4><p>Setting the cognitive-security agenda for the day.</p></div>
           <div class="dur">15 min</div>
         </div>
         <div class="slot feature">
-          <div class="time">Keynote</div>
-          <div class="what"><h4>Keynote — AI, influence, and collective sensemaking</h4><p>The landscape of AI-mediated influence on human and collective cognition.</p></div>
+          <div class="time">9:15</div>
+          <div class="what"><h4>Keynote — AI, influence, and collective sensemaking</h4><p><strong>Jin-Hee Cho</strong>, Virginia Tech, Trustworthy Cyberspace Lab.</p></div>
           <div class="dur">45 min</div>
         </div>
         <div class="slot">
-          <div class="time">Talks I</div>
-          <div class="what"><h4>Contributed lightning talks I</h4><p>Accepted papers in 4-minute talks with 1 minute of Q&amp;A.</p></div>
+          <div class="time">10:00</div>
+          <div class="what"><h4>Lightning talks I</h4><p>Four minutes each plus one minute of questions.</p><ol class="talks"><li><span class="tk-time">10:00</span><a href="gallery/index.html#p01-wei">AI-associated Delusions: A Sentinel Case of Epistemic Drift</a><span class="tk-by">Marlynn Wei (Private Practice, New York, NY)</span></li><li><span class="tk-time">10:05</span><a href="gallery/index.html#p08-schoenherr-scripts">Social Script Substitution: Social Engineering as Task and Attribute Substitution at the Level of the Situation</a><span class="tk-by">Jordan Richard Schoenherr (Humanix; Carleton University; University of New South Wales)</span></li><li><span class="tk-time">10:10</span><a href="gallery/index.html#p05-schoenherr-sequential">Security as Sequential Decision-Making: Moving from Signal Detection Theory to Leaky-Integration Model for Cognitive Security</a><span class="tk-by">Jordan Richard Schoenherr (Humanix; Carleton University; University of New South Wales)</span></li><li><span class="tk-time">10:15</span><a href="gallery/index.html#p15-shaw-cremer">Epistemic Risk from False Memory Implantation by Use of Conversational AI</a><span class="tk-by">Julia Shaw (King's College London, Institute for AI), Carla Zoe Cremer (AI Psychological Research Coalition)</span></li><li><span class="tk-time">10:20</span><a href="gallery/index.html#p03-galang">Between Mind and Machine: Taking the Intentional Stance Toward AI Predicts Reliance Beyond General Anthropomorphism</a><span class="tk-by">Carl Michael Galang, Khaled Hassanein, Milena Head (McMaster University)</span></li><li><span class="tk-time">10:25</span><a href="gallery/index.html#p07-cremer">Software as a Science of Cognitive Shaping</a><span class="tk-by">Carla Zoe Cremer (AI Psychological Research Coalition), Andrew Brož, Sarah Lucioni</span></li></ol></div>
           <div class="dur">30 min</div>
         </div>
         <div class="slot break">
-          <div class="time">Break</div>
-          <div class="what"><h4>Coffee</h4></div>
+          <div class="time">10:30</div>
+          <div class="what"><h4>Coffee break</h4></div>
           <div class="dur"></div>
         </div>
         <div class="slot">
-          <div class="time">Panel 1</div>
-          <div class="what"><h4>Reliance, oversight &amp; frictional system design</h4><p>Cognitive-forcing functions, microboundaries, and seams.</p></div>
+          <div class="time">10:45</div>
+          <div class="what"><h4>Panel 1 — Reliance, oversight &amp; frictional system design</h4><p><strong>Brett Frischmann</strong> (Villanova) and <strong>Ujwal Gadiraju</strong> (TU Delft). Moderated by Harram Mansoor. Cognitive-forcing functions, microboundaries, and seams.</p></div>
           <div class="dur">45 min</div>
         </div>
         <div class="slot">
-          <div class="time">Talks II</div>
-          <div class="what"><h4>Contributed lightning talks II</h4><p>Accepted papers in 4-minute talks with 1 minute of Q&amp;A.</p></div>
+          <div class="time">11:30</div>
+          <div class="what"><h4>Lightning talks II</h4><p>Four minutes each plus one minute of questions.</p><ol class="talks"><li><span class="tk-time">11:30</span><a href="gallery/index.html#p06-williams-scurrell">The Watchtower Imperative: Lifespan-Calibrated Evaluation for Frontier AI</a><span class="tk-by">Casey M. Williams (University of Kansas), Jennifer Victoria Scurrell (ETH Zurich / University of Zurich)</span></li><li><span class="tk-time">11:35</span><a href="gallery/index.html#p18-litvak">How Well Does AI Peer Review Work? A Benchmark Built from 100 Planted Errors</a><span class="tk-by">Paul Litvak (Robyn Dawes Institute)</span></li><li><span class="tk-time">11:40</span><a href="gallery/index.html#p11-lu">Cognitive Security as a Technical Problem: Assistance Timing, Removed-Tool Evaluation, and Two Catalog Entries for AI-Mediated Learning</a><span class="tk-by">Hao-Tian Lu, Kuan-Wei Lu (Junyi Academy Foundation)</span></li><li><span class="tk-time">11:45</span><a href="gallery/index.html#p04-conklin">Connectedness, Cognitive Load, and Human-AI Oversight in Cyber Operations</a><span class="tk-by">Nathan Conklin (Virginia Tech)</span></li><li><span class="tk-time">11:50</span><a href="gallery/index.html#p12-umrawal">Regulating Attention in Digital Platforms via Dynamic Taxation and Strategic Learning</a><span class="tk-by">Abhishek Umrawal (University of Illinois Urbana-Champaign), Eliot Robson (Narmi Inc.), Alex Zheng (Independent Researcher), Elaine Ly (Northeastern University), Lav Varshney (Stony Brook University)</span></li><li><span class="tk-time">11:55</span><a href="gallery/index.html#p13-murphy">The Market for Synthetic Lemons: What Can George Akerlof Teach Us About Safeguarding Cognitive Security?</a><span class="tk-by">Dennis Murphy (Georgia Tech), Jon Lindsay</span></li></ol></div>
           <div class="dur">30 min</div>
         </div>
         <div class="slot break">
-          <div class="time">Break</div>
-          <div class="what"><h4>Lunch</h4><p>Boxed lunch included in workshop-day registration; the digital gallery is browsable throughout.</p></div>
+          <div class="time">12:00</div>
+          <div class="what"><h4>Lunch</h4><p>Boxed lunches are in the 5th-floor lobby and are included with workshop-day registration.</p></div>
           <div class="dur"></div>
         </div>
         <div class="slot">
-          <div class="time">Panel 2</div>
-          <div class="what"><h4>Belief, manipulation &amp; cognitive resilience</h4><p>Persuasion, prebunking, and what works.</p></div>
-          <div class="dur">45 min</div>
-        </div>
-        <div class="slot">
-          <div class="time">Talks III</div>
-          <div class="what"><h4>Contributed lightning talks III</h4><p>Accepted papers in 4-minute talks with 1 minute of Q&amp;A.</p></div>
+          <div class="time">13:00</div>
+          <div class="what"><h4>Lightning talks III</h4><p>Four minutes each plus one minute of questions.</p><ol class="talks"><li><span class="tk-time">13:00</span><a href="gallery/index.html#p09-patil">The Accountability Regime as Cognitive Infrastructure: How Organizational Design Determines Whether Cognitive Security Interventions Function</a><span class="tk-by">Shefali Patil (University of Texas at Austin)</span></li><li><span class="tk-time">13:05</span><a href="gallery/index.html#p14-ranjan">Shaping Deepfake Non-Consensual Intimate Imagery Prevention and Intervention Strategies through Frontline Perspectives</a><span class="tk-by">Riya Ranjan (Stanford University)</span></li><li><span class="tk-time">13:10</span><a href="gallery/index.html#p16-levy-raz">Collective Cognitive Security by Design: What Makes Human Groups Cognitively Secure and Agentic in AI-Rich Environments?</a><span class="tk-by">Anat Levy-Raz (University of Haifa)</span></li><li><span class="tk-time">13:15</span><a href="gallery/index.html#p17-kempkey-gentzel">A Two-Axis Taxonomy for Cognitive Security: Timing, Source, and the Case for Treating Capacity Erosion Separately</a><span class="tk-by">Kristina Kempkey (Institute for AI Policy and Strategy), Matthew Gentzel (Longview Philanthropy)</span></li><li><span class="tk-time">13:20</span><a href="gallery/index.html#p10-cohen">The Field Guide to Thinking for Ourselves</a><span class="tk-by">Allegra Cohen</span></li></ol></div>
           <div class="dur">30 min</div>
         </div>
+        <div class="slot">
+          <div class="time">13:30</div>
+          <div class="what"><h4>Panel 2 — Belief, manipulation &amp; cognitive resilience</h4><p><strong>Nick Caputo</strong> (Johns Hopkins) and <strong>Ryan Boyd</strong> (Vanderbilt, joining remotely). Moderated by Andy Haupt, remotely. Persuasion, prebunking, and what works.</p></div>
+          <div class="dur">45 min</div>
+        </div>
         <div class="slot break">
-          <div class="time">Break</div>
-          <div class="what"><h4>Coffee</h4></div>
+          <div class="time">14:15</div>
+          <div class="what"><h4>Coffee break</h4></div>
           <div class="dur"></div>
         </div>
         <div class="slot feature">
-          <div class="time">Build</div>
-          <div class="what"><h4>CVMC Jam — build phase</h4><p>Mixed tables draft catalog entries end to end. Template, worked example, facilitator, and scribe per table — including a dedicated all-remote table.</p></div>
+          <div class="time">14:30</div>
+          <div class="what"><h4>CVMC Jam — build phase</h4><p>Mixed tables draft catalog entries end to end. Template, worked example, facilitator, and scribe per table, including one all-remote table on Zoom.</p></div>
           <div class="dur">75 min</div>
         </div>
         <div class="slot feature">
-          <div class="time">Report-out</div>
+          <div class="time">15:45</div>
           <div class="what"><h4>CVMC Jam — report-out &amp; review</h4><p>Every entry reviewed against the schema before release.</p></div>
           <div class="dur">35 min</div>
         </div>
         <div class="slot feature">
-          <div class="time">Closing</div>
+          <div class="time">16:20</div>
           <div class="what"><h4>Closing synthesis &amp; roadmap</h4><p>A community measurement roadmap and next steps.</p></div>
           <div class="dur">20 min</div>
         </div>
       </div>
 
-      <h3 style="margin:40px 0 6px; font-size:1.1rem">Contributed talks — confirmed to date</h3>
-      <p class="fineprint" style="margin:0 0 16px">Accepted papers whose authors have registered or confirmed their attendance so far, grouped by theme. The list grows as remaining authors confirm; the final talk order will be posted with the detailed schedule.</p>
-
-      <div class="papers">
-        <div class="paper-group">
-          <h4>Vulnerabilities &amp; mechanisms</h4>
-          <ul>
-            <li><span class="paper-title">AI-associated Delusions: A Sentinel Case of Epistemic Drift</span><span class="paper-authors">Marlynn Wei (Private Practice, New York, NY)</span></li>
-            <li><span class="paper-title">Between Mind and Machine: Taking the Intentional Stance Toward AI Predicts Reliance Beyond General Anthropomorphism</span><span class="paper-authors">Carl Michael Galang, Khaled Hassanein, Milena Head (McMaster University)</span></li>
-            <li><span class="paper-title">Epistemic Risk from False Memory Implantation by Use of Conversational AI</span><span class="paper-authors">Julia Shaw (King's College London, Institute for AI), Carla Zoe Cremer (AI Psychological Research Coalition)</span></li>
-          </ul>
-        </div>
-        <div class="paper-group">
-          <h4>Measurement &amp; evaluation</h4>
-          <ul>
-            <li><span class="paper-title">The Watchtower Imperative: Lifespan-Calibrated Evaluation for Frontier AI</span><span class="paper-authors">Casey M. Williams (University of Kansas), Jennifer Victoria Scurrell (ETH Zurich / University of Zurich)</span></li>
-            <li><span class="paper-title">Connectedness, Cognitive Load, and Human-AI Oversight in Cyber Operations</span><span class="paper-authors">Nathan Conklin (Virginia Tech)</span></li>
-            <li><span class="paper-title">Cognitive Security as a Technical Problem: Assistance Timing, Removed-Tool Evaluation, and Two Catalog Entries for AI-Mediated Learning</span><span class="paper-authors">Hao-Tian Lu, Kuan-Wei Lu (Junyi Academy Foundation)</span></li>
-            <li><span class="paper-title">How Well Does AI Peer Review Work? A Benchmark Built from 100 Planted Errors</span><span class="paper-authors">Paul Litvak (Robyn Dawes Institute)</span></li>
-            <li><span class="paper-title">The Market for Synthetic Lemons: What Can George Akerlof Teach Us About Safeguarding Cognitive Security?</span><span class="paper-authors">Dennis Murphy (Georgia Tech), Jon Lindsay</span></li>
-          </ul>
-        </div>
-        <div class="paper-group">
-          <h4>Governance, collective sensemaking &amp; framing</h4>
-          <ul>
-            <li><span class="paper-title">The Accountability Regime as Cognitive Infrastructure: How Organizational Design Determines Whether Cognitive Security Interventions Function</span><span class="paper-authors">Shefali Patil (University of Texas at Austin)</span></li>
-            <li><span class="paper-title">The Field Guide to Thinking for Ourselves</span><span class="paper-authors">Allegra Cohen</span></li>
-            <li><span class="paper-title">Shaping Deepfake Non-Consensual Intimate Imagery Prevention and Intervention Strategies through Frontline Perspectives</span><span class="paper-authors">Riya Ranjan (Stanford University)</span></li>
-            <li><span class="paper-title">Collective Cognitive Security by Design: What Makes Human Groups Cognitively Secure and Agentic in AI-Rich Environments?</span><span class="paper-authors">Anat Levy-Raz (University of Haifa)</span></li>
-          </ul>
-        </div>
-      </div>
-
       <div class="grid cols-2" style="margin-top:28px">
         <div class="card">
-          <h3>The digital gallery</h3>
-          <p>Every accepted paper gets a page in a digital gallery, browsable throughout the workshop day and kept up afterward alongside the CVMC release. Each page carries the program listing — title, authors, abstract. Anything beyond that is the authors' choice: a one-page poster, a short captioned video, a plain-text summary, or the paper itself, each opt-in. The gallery is identical for in-person and remote attendees.</p>
+          <h3>Papers &amp; posters</h3>
+          <p>Titles, authors, and abstracts for all 17 talks, plus posters and full papers from authors who provided them. <a href="gallery/index.html">See the papers →</a></p>
         </div>
         <div class="card">
-          <h3>For accepted authors</h3>
-          <p>Every paper presents as a 4-minute lightning talk with 1 minute of Q&amp;A; all decks are collected and pre-loaded ahead of the day, for in-person and remote speakers alike. We will request gallery materials in early September, and slides are due about a week before the workshop. At least one author per paper must <a href="#register">register</a> — early rates now run through August 28 — and nothing else is needed before September.</p>
+          <h3>Joining remotely</h3>
+          <p>The whole day runs on one Zoom link, emailed to registered participants. Remote speakers present live, and remote participants work together as one table in the CVMC Jam.</p>
         </div>
       </div>
     </div>
@@ -346,38 +315,45 @@
     <div class="wrap">
       <div class="section-head">
         <div class="kicker">Speakers</div>
-        <h2>Confirmed speakers</h2>
-        <p>Additional keynote and panel speakers are being confirmed on the standard timeline and will be posted here.</p>
+        <h2>Keynote and panelists</h2>
+        <p>Panel 1 is moderated by Harram Mansoor and Panel 2 by Andy Haupt.</p>
       </div>
 
       <div class="people">
         <div class="person">
-          <span class="badge confirmed">Confirmed · Panel 1</span>
+          <span class="badge confirmed">Keynote</span>
+          <div class="avatar"><img src="images/jin-hee-cho.jpg" alt="Jin-Hee Cho" /></div>
+          <h3>Jin-Hee Cho</h3>
+          <p class="role">Virginia Tech · Computer Science</p>
+          <p class="bio">Jin-Hee Cho is an Associate Professor of Computer Science at Virginia Tech, where she directs the Trustworthy Cyberspace Lab. Her research spans trust management, information credibility, social network analysis, decision making under uncertainty, and cyber defense, including defensive deception. Before joining Virginia Tech in 2018, she was a computer scientist at the U.S. Army Research Laboratory.</p>
+        </div>
+        <div class="person">
+          <span class="badge confirmed">Panel 1</span>
           <div class="avatar"><img src="images/brett-frischmann.jpeg" alt="Brett Frischmann" /></div>
           <h3>Brett Frischmann</h3>
-          <p class="role">Villanova University · Widger Chair in Law, Business &amp; Economics</p>
-          <p class="bio">Co-author of <em>Re-Engineering Humanity</em> (Cambridge, 2018); his work on friction-in-design and prosocial friction anchors the workshop's design thread. Organizer.</p>
+          <p class="role">Villanova University · Law, Business &amp; Economics</p>
+          <p class="bio">Brett Frischmann is the Charles Widger Endowed University Professor in Law, Business and Economics at Villanova University. His research spans intellectual property, privacy, and technology law. With philosopher Evan Selinger, he co-authored <em>Re-Engineering Humanity</em> (Cambridge University Press, 2018). His recent work advocates friction-in-design to safeguard human capabilities and values. Also a workshop organizer.</p>
         </div>
         <div class="person">
-          <span class="badge confirmed">Confirmed · Panel 1</span>
+          <span class="badge confirmed">Panel 1</span>
           <div class="avatar"><img src="images/ujwal-gadiraju.jpg" alt="Ujwal Gadiraju" /></div>
           <h3>Ujwal Gadiraju</h3>
-          <p class="role">TU Delft · Web Information Systems</p>
-          <p class="bio">Associate Professor at TU Delft and director of the Delft AI "Design@Scale" Lab; Co-Editor-in-Chief of the <em>Human Computation Journal</em>. His research spans crowd computing, human-centered AI, and human–AI interaction.</p>
+          <p class="role">Delft University of Technology · Web Information Systems</p>
+          <p class="bio">Ujwal Gadiraju is an Associate Professor in the Web Information Systems group at Delft University of Technology, where he directs the Delft AI Design@Scale Lab. His research spans human-computer interaction, AI, crowd computing, and information retrieval, with a focus on human-centered AI and appropriate human reliance on AI systems. He serves on the HCOMP steering committee.</p>
         </div>
         <div class="person">
-          <span class="badge confirmed">Confirmed · Panel 2</span>
-          <div class="avatar"><img src="images/aruna-sankaranarayanan.jpg" alt="Aruna Sankaranarayanan" /></div>
-          <h3>Aruna Sankaranarayanan</h3>
-          <p class="role">MIT CSAIL / EECS</p>
-          <p class="bio">Researcher at MIT (CSAIL / EECS) working on manipulated media, deepfakes, and their effects on elections and public trust. Her study on <a href="https://www.nature.com/articles/s41467-024-51998-z" target="_blank" rel="noopener">human detection of political-speech deepfakes</a> was published in <em>Nature Communications</em> (2024).</p>
+          <span class="badge confirmed">Panel 2</span>
+          <div class="avatar"><img src="images/nick-caputo.jpg" alt="Nicholas Caputo" /></div>
+          <h3>Nicholas Caputo</h3>
+          <p class="role">Johns Hopkins School of Government and Policy</p>
+          <p class="bio">Nicholas Caputo is Assistant Professor of Frontier AI Governance at the Johns Hopkins School of Government and Policy and Law &amp; AI Lead at the Oxford Martin AI Governance Initiative. He studies how law can govern artificial intelligence and how AI can improve legal and administrative institutions, drawing on constitutional and administrative law and technical work in AI alignment.</p>
         </div>
         <div class="person">
-          <span class="badge confirmed">Confirmed · Governance</span>
-          <div class="avatar"><img src="images/nick-caputo.jpg" alt="Nick Caputo" /></div>
-          <h3>Nick Caputo</h3>
-          <p class="role">Oxford Martin AI Governance Initiative</p>
-          <p class="bio">Legal researcher at the Oxford Martin AI Governance Initiative studying frontier-AI regulation, legal alignment, and AI governance institutions; a Harvard Law graduate.</p>
+          <span class="badge confirmed">Panel 2 · Remote</span>
+          <div class="avatar"><img src="images/ryan-boyd.jpg" alt="Ryan L. Boyd" /></div>
+          <h3>Ryan L. Boyd</h3>
+          <p class="role">Vanderbilt University · College of Connected Computing</p>
+          <p class="bio">Ryan L. Boyd is an Assistant Professor in the College of Connected Computing at Vanderbilt University. A psychologist and computational social scientist, he studies mental health, personality, values, and social relationships through the computational analysis of language. He also examines large language models as objects of psychological study and has worked on the LIWC text analysis software since about 2014.</p>
         </div>
       </div>
     </div>
@@ -410,19 +386,18 @@
         <div class="date-card"><div class="d"><s class="was">Aug 21</s> Aug 28, 2026</div><div class="l">Early registration ends <span class="ext">Extended</span></div></div>
         <div class="date-card"><div class="d">Sep 27, 2026</div><div class="l">Workshop</div></div>
       </div>
-      <p class="fineprint">Decisions went out to all authors on <strong>August 20</strong>, and the conference has since extended early-bird registration to <strong>Friday, August 28</strong> — so accepted authors can still register at the early rate.</p>
-
+      
       <div class="callout">
         <h3>Submissions are closed</h3>
-        <p><strong>The call closed on August 17, 2026 (AoE).</strong> Thank you to everyone who sent work. Decisions went out to all authors on <strong>August 20</strong>, and the accepted talks confirmed so far are listed in the <a href="#program">program</a>. Authors can review their submission on <a href="https://easychair.org/conferences/?conf=cogsec2026" target="_blank" rel="noopener">EasyChair</a>.</p>
+        <p><strong>The call closed on August 17, 2026 (AoE).</strong> Thank you to everyone who sent work. Decisions went out to all authors on <strong>August 20</strong>. All 17 accepted talks are in the <a href="#program">program</a>, with abstracts on the <a href="gallery/index.html">papers page</a>. Authors can review their submission on <a href="https://easychair.org/conferences/?conf=cogsec2026" target="_blank" rel="noopener">EasyChair</a>.</p>
         <p>You do not need an accepted paper to take part. CogSec is open to anyone who registers, and the CVMC Jam is built so that every person in the room helps produce the catalog. Questions? Reach the organizers by email.</p>
         <a class="btn btn-primary" href="#register" style="margin-right:10px;">Register to attend →</a>
         <a class="btn" href="mailto:vastu@stanford.edu?subject=CogSec%202026%20Inquiry">Email the organizers →</a>
       </div>
 
       <div class="callout" id="register">
-        <h3>Registration is open</h3>
-        <p><strong>Early rates extended: the conference has moved the early-bird deadline from August 21 to Friday, August 28, 2026.</strong> CogSec runs on the HCOMP / CI 2026 workshop day, Sunday September 27, and you can <strong>register for the workshop day on its own</strong> without registering for the main conference. Workshop-day registration includes snacks and a boxed lunch; full-conference registration (Sep 27–30) covers the workshop day too.</p>
+        <h3>Registration</h3>
+        <p>CogSec runs on the HCOMP / CI 2026 workshop day, Sunday September 27, and you can <strong>register for the workshop day on its own</strong> without registering for the main conference. Workshop-day registration includes snacks and a boxed lunch; full-conference registration (Sep 27–30) covers the workshop day too.</p>
         <table class="rates">
           <thead>
             <tr><th>Workshop day</th><th>Early<br />through Aug 28</th><th>Regular<br />by Sep 4</th><th>Late<br />after Sep 4</th></tr>
@@ -433,7 +408,7 @@
             <tr><td>Non-member</td><td>$175</td><td>$200</td><td>$225</td></tr>
           </tbody>
         </table>
-        <p>You do not need to submit a paper to attend — everyone is welcome. At least one author of each accepted paper must register and present; with the extension, accepted authors can still register at the early rate. The workshop is hybrid, so remote attendance is an option.</p>
+        <p>You do not need to submit a paper to attend; everyone is welcome. Late rates now apply. The workshop is hybrid, so remote attendance is an option.</p>
         <a class="btn btn-primary" href="https://web.cvent.com/event/f524060f-8e24-462f-8b41-c858cf0db253/summary" target="_blank" rel="noopener" style="margin-right:10px;">Register →</a>
         <a class="btn" href="https://hcomp.acm.org/2026/registration.html" target="_blank" rel="noopener">Rates &amp; details →</a>
       </div>
@@ -505,6 +480,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#themes">Themes</a></li>
             <li><a href="#program">Program</a></li>
+            <li><a href="gallery/index.html">Papers</a></li>
             <li><a href="#speakers">Speakers</a></li>
             <li><a href="#cfp">Call for Participation</a></li>
             <li><a href="#register">Register</a></li>
